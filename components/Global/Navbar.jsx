@@ -173,13 +173,6 @@ const Navbar = () => {
               >
                 Team
               </Link>
-
-              <Link
-                href="/our-impact"
-                className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
-              >
-                Our Impact
-              </Link>
               <Link
                 href="/blogs"
                 className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}

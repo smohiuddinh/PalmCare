@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FiArrowLeft } from "react-icons/fi";
+import { ClipLoader } from "react-spinners";
 
 const BlogDetails = () => {
   const params = useParams();
@@ -28,7 +29,6 @@ const BlogDetails = () => {
       throw error;
     }
   };
-
   useEffect(() => {
     if (!params?.id) return;
 
@@ -43,7 +43,11 @@ const BlogDetails = () => {
       });
   }, [params?.id]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return (
+    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50">
+      <div className="w-10 h-10 border-4 border-yellow-500 border-t-transparent rounded-full animate-spin"></div>
+    </div>
+  );
   if (error) return <div>Error loading blog: {error.message}</div>;
 
   return (
