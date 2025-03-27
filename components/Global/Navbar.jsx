@@ -8,6 +8,7 @@ import ThemeContext from "@/context/ThemeContext";
 import { useRouter } from "next/navigation"; // Import the useRouter hook for navigation
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the styles
+import { LogIn } from 'lucide-react';
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
@@ -72,17 +73,17 @@ const Navbar = () => {
             Team
           </Link>
 
-          <Link
+          {/* <Link
             href="/our-impact"
             className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
           >
             Our Impact
-          </Link>
+          </Link> */}
           <Link
             href="/blogs"
             className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
           >
-            Blogs
+            Our Impact
           </Link>
           <Link
             href="/contact-us"
@@ -97,7 +98,8 @@ const Navbar = () => {
               href="/login"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
-              Login
+              <LogIn />
+
             </Link>
           ) : (
             <>
@@ -177,7 +179,7 @@ const Navbar = () => {
                 href="/blogs"
                 className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
               >
-                Blogs
+                Our Impact
               </Link>
               <Link
                 href="/contact-us"
@@ -192,7 +194,7 @@ const Navbar = () => {
                   href="/login"
                   className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
                 >
-                  Login
+                  <LogIn/>
                 </Link>
               ) : (
                 <>

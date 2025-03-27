@@ -5,6 +5,7 @@ import ThemeToggler from "./ThemeToggler";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
 import ThemeContext from "@/context/ThemeContext";
+import { LogIn } from 'lucide-react'
 
 const Navbar2 = () => {
   const { theme } = useContext(ThemeContext);
@@ -57,7 +58,7 @@ const Navbar2 = () => {
           href="/blogs"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
-          Blogs
+          Our Impact
         </Link>
         <Link
           href="/contact-us"
@@ -69,7 +70,7 @@ const Navbar2 = () => {
           href="/contact-us"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
-          Login
+          <LogIn/>
         </Link>
         <ThemeToggler />
       </div>
@@ -131,7 +132,7 @@ const Navbar2 = () => {
               href="/blogs"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
-              Blogs
+              Our Impact
             </Link>
             <Link
               href="/events"

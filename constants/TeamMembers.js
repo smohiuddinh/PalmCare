@@ -2,12 +2,12 @@ export const volunteers = [
   {
     name: "Ayeshah Siddiqui",
     designation: "Youth Fundraiser Coordinator",
-    image_url: "/assets/volunteer-1.jpeg",
+    image_url: "/assets/user.png",
   },
   {
     name: "Maira Siddiqui",
     designation: "Youth Fundraiser Coordinator",
-    image_url: "/assets/maira-siddiqui.jpeg",
+    image_url: "/assets/user.png",
   },
 ];
 
